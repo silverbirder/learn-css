@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Every Layout Demo - Modern CSS Layout Patterns</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Floating decoration elements -->
+      <div class="decoration decoration-1"></div>
+      <div class="decoration decoration-2"></div>
+      <div class="decoration decoration-3"></div>
+
+      <!-- Animated background -->
+      <div class="bg-animation bg-animation-1"></div>
+      <div class="bg-animation bg-animation-2"></div>
+
+      <!-- Hero content -->
+      <div class="hero-content">
+        <div class="badge">Every Layout Patterns Demo</div>
+        <h1 class="hero-title">
+          Modern CSS Layout
+          <span class="gradient-text">Patterns</span>
+        </h1>
+        <p class="hero-description">
+          Discover the power of flexible, responsive layouts using proven CSS
+          patterns that work everywhere.
+        </p>
+
+        <!-- Button group -->
+        <div class="button-group">
+          <button class="btn btn-primary">
+            Get Started
+            <span class="arrow">→</span>
+          </button>
+          <button class="btn btn-secondary">
+            <span class="play-icon">▶</span>
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-indicator-inner">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">EveryLayout</div>
+        <div class="navbar-menu">
+          <a href="#" class="navbar-link">Features</a>
+          <a href="#" class="navbar-link">Patterns</a>
+          <a href="#" class="navbar-link">Examples</a>
+          <a href="#" class="navbar-link">Docs</a>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container">
+      <!-- Features section -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Why Every Layout?</h2>
+          <p class="section-description">
+            These battle-tested patterns solve common layout challenges with
+            minimal, flexible CSS.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Performance</h3>
+            <p class="feature-description">
+              Minimal CSS for maximum impact with optimized rendering
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3 class="feature-title">Reliable</h3>
+            <p class="feature-description">
+              Battle-tested across all browsers and devices
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3 class="feature-title">Universal</h3>
+            <p class="feature-description">
+              Works with any framework or vanilla CSS implementation
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3 class="feature-title">Accessible</h3>
+            <p class="feature-description">
+              Built with accessibility and screen readers in mind
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">❤️</div>
+            <h3 class="feature-title">Maintainable</h3>
+            <p class="feature-description">
+              Clean, readable, and logical code structure
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3 class="feature-title">Proven</h3>
+            <p class="feature-description">
+              Used by thousands of developers worldwide
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Position Practice Section -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Position Practice</h2>
+          <p class="section-description">
+            Cards with positioned elements in corners and overlays
+          </p>
+        </div>
+
+        <div class="position-grid">
+          <!-- Premium Plan Card -->
+          <div class="position-card">
+            <div class="badge-corner badge-new">New</div>
+            <div class="status-indicator"></div>
+            <div class="card-header">
+              <h3 class="card-title">Premium Plan</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Advanced features with priority support and unlimited access.
+              </p>
+              <div class="price">$29/month</div>
+            </div>
+          </div>
+
+          <!-- Business Plan Card -->
+          <div class="position-card">
+            <div class="bg-pattern"></div>
+            <button class="floating-btn">→</button>
+            <div class="card-header">
+              <h3 class="card-title">Business Plan</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Perfect for growing teams with advanced collaboration tools.
+              </p>
+              <div class="price price-purple">$99/month</div>
+            </div>
+          </div>
+
+          <!-- Enterprise Plan Card -->
+          <div class="position-card enterprise-card">
+            <button class="close-btn">×</button>
+            <div class="category-tag">Enterprise</div>
+            <div class="price-tag">Custom Pricing</div>
+            <div class="overlay">
+              <button class="btn btn-overlay">Learn More</button>
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">Enterprise Plan</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Tailored solutions for large organizations with dedicated
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Background Examples Section -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Background Image Examples</h2>
+          <p class="section-description">
+            Various background-image techniques and patterns
+          </p>
+        </div>
+
+        <div class="bg-examples-grid">
+          <div class="bg-card pattern-bg">
+            <div class="bg-overlay"></div>
+            <div class="bg-content">
+              <h3>Pattern Background</h3>
+              <p>SVG pattern with gradient overlay</p>
+            </div>
+          </div>
+
+          <div class="bg-card dot-bg">
+            <div class="bg-content dark">
+              <h3>Dot Pattern</h3>
+              <p>Repeating SVG dot pattern background</p>
+            </div>
+          </div>
+
+          <div class="bg-card geometric-bg">
+            <div class="bg-content">
+              <h3>Geometric Pattern</h3>
+              <p>Diamond pattern with gradient</p>
+            </div>
+          </div>
+
+          <div class="bg-card multilayer-bg">
+            <div class="bg-content dark">
+              <h3>Multi-layer</h3>
+              <p>Multiple background layers combined</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Grid Pattern -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">The Grid Pattern</h2>
+          <p class="section-description">
+            Flexible grid layouts with advanced interactions
+          </p>
+        </div>
+
+        <div class="auto-grid">
+          <div class="grid-item">
+            <h3>Grid Item 1</h3>
+            <p>
+              This grid automatically adjusts the number of columns based on
+              available space using CSS Grid's auto-fit functionality.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Grid Item 2</h3>
+            <p>
+              This grid automatically adjusts the number of columns based on
+              available space using CSS Grid's auto-fit functionality.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Grid Item 3</h3>
+            <p>
+              This grid automatically adjusts the number of columns based on
+              available space using CSS Grid's auto-fit functionality.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Grid Item 4</h3>
+            <p>
+              This grid automatically adjusts the number of columns based on
+              available space using CSS Grid's auto-fit functionality.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Grid Item 5</h3>
+            <p>
+              This grid automatically adjusts the number of columns based on
+              available space using CSS Grid's auto-fit functionality.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Grid Item 6</h3>
+            <p>
+              This grid automatically adjusts the number of columns based on
+              available space using CSS Grid's auto-fit functionality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Cluster Pattern -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">The Cluster Pattern</h2>
+          <p class="section-description">
+            Flexible grouping with advanced hover states
+          </p>
+        </div>
+
+        <div class="tag-cluster">
+          <span class="tag tag-1">CSS</span>
+          <span class="tag tag-2">HTML</span>
+          <span class="tag tag-3">JavaScript</span>
+          <span class="tag tag-4">React</span>
+          <span class="tag tag-1">Vue</span>
+          <span class="tag tag-2">Angular</span>
+          <span class="tag tag-3">Svelte</span>
+          <span class="tag tag-4">TypeScript</span>
+          <span class="tag tag-1">Tailwind</span>
+          <span class="tag tag-2">SCSS</span>
+          <span class="tag tag-3">Flexbox</span>
+          <span class="tag tag-4">Grid</span>
+          <span class="tag tag-1">Responsive</span>
+          <span class="tag tag-2">Mobile-First</span>
+          <span class="tag tag-3">Animation</span>
+          <span class="tag tag-4">Transitions</span>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+        <div class="newsletter-bg-1"></div>
+        <div class="newsletter-bg-2"></div>
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">Stay Updated</h2>
+          <p class="newsletter-description">
+            Get the latest updates on CSS layout patterns and modern web
+            development techniques.
+          </p>
+          <div class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter-input"
+            />
+            <button class="btn btn-newsletter">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3 class="footer-title">Every Layout</h3>
+            <p class="footer-description">
+              Modern CSS layout patterns for everyone.
+            </p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Discord</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Every Layout Demo. Built with modern CSS patterns and
+            advanced techniques.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
