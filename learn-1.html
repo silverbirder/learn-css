@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Layout</title>
+    <title>Learn CSS Layout</title>
     <link rel="stylesheet" href="./css/learn-1.css" />
   </head>
   <body>
     <div class="hero">
       <hgroup class="hero-header">
         <h1 class="title">Learn CSS</h1>
-        <p class="sub-title">A guide to CSS layout techniques</p>
+        <p class="sub-title">CSSレイアウト技術のガイド</p>
       </hgroup>
       <div>↓</div>
     </div>
@@ -18,62 +18,58 @@
     <div class="stack-section">
       <h2 class="stack-title">Stack Pattern</h2>
       <p class="stack-description">
-        Creates consistent vertical spacing between stacked elements.
+        縦に積み重なった要素間に一貫したスペースを作ります。
       </p>
 
       <div class="stack">
-        <h3>Article Title</h3>
+        <h3>記事のタイトル</h3>
         <p>
-          This is the first paragraph of the article. The Stack pattern ensures
-          consistent spacing between all elements.
+          これは記事の最初の段落です。スタックパターンは全ての要素間に一貫したスペースを確保します。
         </p>
         <p>
-          This is the second paragraph. Notice how the spacing is uniform
-          between all elements in the stack.
+          これは2つ目の段落です。スタック内の全ての要素間のスペースが均一であることに注目してください。
         </p>
         <blockquote>
-          This is a blockquote that is also part of the stack with consistent
-          spacing.
+          これは引用文で、一貫したスペースでスタックの一部として表示されます。
         </blockquote>
         <p>
-          And here's another paragraph to demonstrate the consistent vertical
-          rhythm.
+          そして、一貫した縦のリズムを示すためのもう一つの段落があります。
         </p>
-        <button class="stack-button">Call to Action</button>
+        <button class="stack-button">アクションを呼び出す</button>
       </div>
     </div>
 
     <div class="box-section">
       <h2 class="box-title">Box Pattern</h2>
       <p class="box-description">
-        Applies consistent padding around content with optional borders.
+        コンテンツの周りに一貫したパディングを適用し、オプションでボーダーも追加します。
       </p>
 
       <div class="box-demo">
-        <h3>Basic Box</h3>
+        <h3>基本的なボックス</h3>
         <div class="box">
-          <h4>Box Content</h4>
-          <p>This content has consistent padding applied by the Box pattern.</p>
+          <h4>ボックスコンテンツ</h4>
+          <p>このコンテンツには、ボックスパターンによって一貫したパディングが適用されています。</p>
         </div>
       </div>
 
       <div class="box-demo">
-        <h3>Box with Border</h3>
+        <h3>ボーダー付きボックス</h3>
         <div class="box box-bordered">
-          <h4>Bordered Box</h4>
+          <h4>ボーダー付きボックス</h4>
           <p>
-            This box includes a border in addition to the consistent padding.
+            このボックスには、一貫したパディングに加えてボーダーも含まれています。
           </p>
         </div>
       </div>
 
       <div class="box-demo">
-        <h3>Nested Boxes</h3>
+        <h3>ネストしたボックス</h3>
         <div class="box box-bordered">
-          <h4>Outer Box</h4>
+          <h4>外側のボックス</h4>
           <div class="box">
-            <h5>Inner Box</h5>
-            <p>Boxes can be nested while maintaining consistent spacing.</p>
+            <h5>内側のボックス</h5>
+            <p>ボックスは一貫したスペースを保ちながらネストできます。</p>
           </div>
         </div>
       </div>
@@ -82,35 +78,34 @@
     <div class="center-section">
       <h2 class="center-title">Center Pattern</h2>
       <p class="center-description">
-        Centers content horizontally with a maximum width constraint.
+        コンテンツを水平方向に中央揃えし、最大幅の制約を設けます。
       </p>
 
       <div class="center-demo">
-        <h3>Basic Center</h3>
+        <h3>基本的なセンター</h3>
         <div class="center">
           <p>
-            This content is centered horizontally and has a maximum width
-            constraint. When the viewport is wider than the max-width, the
-            content stays centered.
+            このコンテンツは水平方向に中央揃えされ、最大幅の制約があります。
+            ビューポートが最大幅よりも広い場合、コンテンツは中央に配置されます。
           </p>
         </div>
       </div>
 
       <div class="center-demo">
-        <h3>Center with Text Alignment</h3>
+        <h3>テキスト揃え付きセンター</h3>
         <div class="center center-text">
-          <h4>Centered Title</h4>
+          <h4>中央揃えのタイトル</h4>
           <p>
-            This content is both horizontally centered as a block and has
-            center-aligned text.
+            このコンテンツは、ブロックとして水平方向に中央揃えされ、
+            テキストも中央揃えされています。
           </p>
         </div>
       </div>
 
       <div class="center-demo">
-        <h3>Intrinsic Center</h3>
+        <h3>内在的センター</h3>
         <div class="center center-intrinsic">
-          <button>Centered Button</button>
+          <button>中央揃えボタン</button>
         </div>
       </div>
     </div>
@@ -118,12 +113,11 @@
     <div class="cluster-section">
       <h2 class="cluster-title">Cluster Pattern</h2>
       <p class="cluster-description">
-        Items are clustered together with consistent spacing, wrapping naturally
-        when needed.
+        アイテムを一貫したスペースでクラスター化し、必要に応じて自然に折り返します。
       </p>
       <div class="cluster">
-        <div class="cluster-item">Design</div>
-        <div class="cluster-item">Development</div>
+        <div class="cluster-item">デザイン</div>
+        <div class="cluster-item">開発</div>
         <div class="cluster-item">JavaScript</div>
         <div class="cluster-item">CSS</div>
         <div class="cluster-item">HTML</div>
@@ -133,50 +127,47 @@
         <div class="cluster-item">Node.js</div>
         <div class="cluster-item">Python</div>
         <div class="cluster-item">TypeScript</div>
-        <div class="cluster-item">Web APIs</div>
+        <div class="cluster-item">Web API</div>
       </div>
     </div>
 
     <div class="sidebar-section">
       <h2 class="sidebar-title">Sidebar Pattern</h2>
       <p class="sidebar-description">
-        A flexible layout with a sidebar that adapts to content width and
-        viewport size.
+        コンテンツの幅とビューポートサイズに適応する柔軟なサイドバーレイアウト。
       </p>
 
       <div class="sidebar">
         <div class="sidebar-content">
-          <h3>Main Content</h3>
+          <h3>メインコンテンツ</h3>
           <p>
-            This is the main content area that takes up the remaining space. The
-            sidebar will maintain its minimum width, and this content area will
-            grow and shrink as needed.
+            これは残りのスペースを占めるメインコンテンツエリアです。
+            サイドバーは最小幅を維持し、このコンテンツエリアは必要に応じて拡大縮小します。
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris.
+            このセクションでは、サイドバーパターンの動作を実際に確認できます。
+            画面サイズを変更すると、サイドバーとメインコンテンツエリアの関係が
+            どのように変化するかを観察することができます。
           </p>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            サイドバーパターンは、ナビゲーションや補助情報を表示するサイドバーと、
+            主要なコンテンツを表示するメインエリアを持つレイアウトに最適です。
+            レスポンシブデザインでは特に有用で、狭い画面では垂直に積み重なります。
           </p>
         </div>
         <div class="sidebar-nav">
-          <h4>Navigation</h4>
+          <h4>ナビゲーション</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">概要</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#">ポートフォリオ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
           </ul>
-          <h4>Categories</h4>
+          <h4>カテゴリー</h4>
           <ul>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Development</a></li>
+            <li><a href="#">デザイン</a></li>
+            <li><a href="#">開発</a></li>
             <li><a href="#">CSS</a></li>
             <li><a href="#">JavaScript</a></li>
           </ul>
@@ -187,64 +178,60 @@
     <div class="switcher-section">
       <h2 class="switcher-title">Switcher Pattern</h2>
       <p class="switcher-description">
-        Automatically switches between horizontal and vertical layouts based on
-        available space and number of items.
+        利用可能なスペースとアイテム数に基づいて、水平と垂直レイアウトを自動的に切り替えます。
       </p>
 
       <div class="switcher-demo">
-        <h3>3-Column Layout (switches to vertical on narrow screens)</h3>
+        <h3>3カラムレイアウト（狭い画面では縦に切り替わる）</h3>
         <div class="switcher" data-switcher="3">
           <div class="switcher-item">
-            <h4>Feature 1</h4>
+            <h4>機能1</h4>
             <p>
-              This is the first feature description. It automatically adapts to
-              the available space.
+              これは最初の機能の説明です。利用可能なスペースに自動的に適応します。
             </p>
           </div>
           <div class="switcher-item">
-            <h4>Feature 2</h4>
+            <h4>機能2</h4>
             <p>
-              This is the second feature description. Notice how they arrange
-              themselves.
+              これは2番目の機能の説明です。どのように配置されるかに注目してください。
             </p>
           </div>
           <div class="switcher-item">
-            <h4>Feature 3</h4>
+            <h4>機能3</h4>
             <p>
-              This is the third feature description. The layout responds to
-              screen size.
+              これは3番目の機能の説明です。レイアウトは画面サイズに応答します。
             </p>
           </div>
         </div>
       </div>
 
       <div class="switcher-demo">
-        <h3>2-Column Layout</h3>
+        <h3>2カラムレイアウト</h3>
         <div class="switcher" data-switcher="2">
           <div class="switcher-item">
-            <h4>Left Content</h4>
+            <h4>左側のコンテンツ</h4>
             <p>
-              This content takes up half the available space when there's enough
-              room, otherwise it stacks vertically.
+              このコンテンツは十分なスペースがある場合は利用可能スペースの半分を占め、
+              そうでなければ縦に積み重なります。
             </p>
           </div>
           <div class="switcher-item">
-            <h4>Right Content</h4>
+            <h4>右側のコンテンツ</h4>
             <p>
-              This content also takes up half the space in horizontal mode,
-              ensuring equal distribution.
+              このコンテンツも水平モードでは半分のスペースを占め、
+              均等な配分を確保します。
             </p>
           </div>
         </div>
       </div>
 
       <div class="switcher-demo">
-        <h3>4-Item Layout</h3>
+        <h3>4アイテムレイアウト</h3>
         <div class="switcher" data-switcher="4">
-          <div class="switcher-item">Card 1</div>
-          <div class="switcher-item">Card 2</div>
-          <div class="switcher-item">Card 3</div>
-          <div class="switcher-item">Card 4</div>
+          <div class="switcher-item">カード1</div>
+          <div class="switcher-item">カード2</div>
+          <div class="switcher-item">カード3</div>
+          <div class="switcher-item">カード4</div>
         </div>
       </div>
     </div>
@@ -252,51 +239,50 @@
     <div class="cover-section">
       <h2 class="cover-title">Cover Pattern</h2>
       <p class="cover-description">
-        Centers content vertically within a container, with optional header and
-        footer that stick to the edges.
+        コンテナ内でコンテンツを垂直方向に中央揃えし、オプションでヘッダーとフッターを端に配置します。
       </p>
 
       <div class="cover-demo">
-        <h3>Basic Cover Layout</h3>
+        <h3>基本的なカバーレイアウト</h3>
         <div class="cover cover-basic">
-          <header class="cover-header">Header Content</header>
+          <header class="cover-header">ヘッダーコンテンツ</header>
           <main class="cover-main">
-            <h4>Centered Main Content</h4>
+            <h4>中央揃えのメインコンテンツ</h4>
             <p>
-              This content is perfectly centered in the available space. The
-              header stays at the top and footer at the bottom.
+              このコンテンツは利用可能なスペース内で完全に中央揃えされています。
+              ヘッダーは上部に、フッターは下部に配置されます。
             </p>
           </main>
-          <footer class="cover-footer">Footer Content</footer>
+          <footer class="cover-footer">フッターコンテンツ</footer>
         </div>
       </div>
 
       <div class="cover-demo">
-        <h3>Hero Section Cover</h3>
+        <h3>ヒーローセクションカバー</h3>
         <div class="cover cover-hero">
           <div class="cover-main">
-            <h4>Welcome to Our Site</h4>
+            <h4>私たちのサイトへようこそ</h4>
             <p>
-              This hero section uses the Cover pattern to center content
-              perfectly within the viewport height.
+              このヒーローセクションは、カバーパターンを使用してビューポート高さ内で
+              コンテンツを完全に中央揃えしています。
             </p>
-            <button class="cover-button">Get Started</button>
+            <button class="cover-button">始める</button>
           </div>
         </div>
       </div>
 
       <div class="cover-demo">
-        <h3>Card with Cover Layout</h3>
+        <h3>カバーレイアウト付きカード</h3>
         <div class="cover cover-card">
-          <div class="cover-header">Card Header</div>
+          <div class="cover-header">カードヘッダー</div>
           <div class="cover-main">
-            <h4>Card Title</h4>
+            <h4>カードタイトル</h4>
             <p>
-              The main content of this card is centered, with the header and
-              footer positioned at the edges.
+              このカードのメインコンテンツは中央揃えされ、
+              ヘッダーとフッターは端に配置されています。
             </p>
           </div>
-          <div class="cover-footer">Card Footer</div>
+          <div class="cover-footer">カードフッター</div>
         </div>
       </div>
     </div>
@@ -304,86 +290,84 @@
     <div class="grid-section">
       <h2 class="grid-title">Grid Pattern</h2>
       <p class="grid-description">
-        Creates responsive grids that automatically adjust the number of columns
-        based on available space and item minimum width.
+        利用可能なスペースとアイテムの最小幅に基づいて、
+        カラム数を自動的に調整するレスポンシブグリッドを作成します。
       </p>
 
       <div class="grid-demo">
-        <h3>Auto Grid (minimum 250px per item)</h3>
+        <h3>自動グリッド（アイテムあたり最小250px）</h3>
         <div class="grid" data-grid="250px">
           <div class="grid-item">
-            <h4>Grid Item 1</h4>
+            <h4>グリッドアイテム1</h4>
             <p>
-              This item has a minimum width of 250px and will automatically
-              create new columns as space allows.
+              このアイテムは最小幅250pxを持ち、スペースが許す限り
+              自動的に新しいカラムを作成します。
             </p>
           </div>
           <div class="grid-item">
-            <h4>Grid Item 2</h4>
+            <h4>グリッドアイテム2</h4>
             <p>
-              Grid items wrap to new rows when there isn't enough horizontal
-              space.
+              水平スペースが十分でない場合、グリッドアイテムは新しい行に折り返されます。
             </p>
           </div>
           <div class="grid-item">
-            <h4>Grid Item 3</h4>
+            <h4>グリッドアイテム3</h4>
             <p>
-              The grid automatically determines how many columns fit based on
-              the minimum width.
+              グリッドは最小幅に基づいて、何カラムが収まるかを自動的に決定します。
             </p>
           </div>
           <div class="grid-item">
-            <h4>Grid Item 4</h4>
-            <p>This creates a truly responsive grid without media queries.</p>
+            <h4>グリッドアイテム4</h4>
+            <p>これにより、メディアクエリなしで真にレスポンシブなグリッドが作成されます。</p>
           </div>
           <div class="grid-item">
-            <h4>Grid Item 5</h4>
-            <p>Additional items continue the pattern seamlessly.</p>
+            <h4>グリッドアイテム5</h4>
+            <p>追加のアイテムもシームレスにパターンを継続します。</p>
           </div>
           <div class="grid-item">
-            <h4>Grid Item 6</h4>
-            <p>The grid adapts to any number of items automatically.</p>
+            <h4>グリッドアイテム6</h4>
+            <p>グリッドは任意の数のアイテムに自動的に適応します。</p>
           </div>
         </div>
       </div>
 
       <div class="grid-demo">
-        <h3>Compact Grid (minimum 200px per item)</h3>
+        <h3>コンパクトグリッド（アイテムあたり最小200px）</h3>
         <div class="grid" data-grid="200px">
-          <div class="grid-item grid-item-compact">Card 1</div>
-          <div class="grid-item grid-item-compact">Card 2</div>
-          <div class="grid-item grid-item-compact">Card 3</div>
-          <div class="grid-item grid-item-compact">Card 4</div>
-          <div class="grid-item grid-item-compact">Card 5</div>
-          <div class="grid-item grid-item-compact">Card 6</div>
-          <div class="grid-item grid-item-compact">Card 7</div>
-          <div class="grid-item grid-item-compact">Card 8</div>
+          <div class="grid-item grid-item-compact">カード1</div>
+          <div class="grid-item grid-item-compact">カード2</div>
+          <div class="grid-item grid-item-compact">カード3</div>
+          <div class="grid-item grid-item-compact">カード4</div>
+          <div class="grid-item grid-item-compact">カード5</div>
+          <div class="grid-item grid-item-compact">カード6</div>
+          <div class="grid-item grid-item-compact">カード7</div>
+          <div class="grid-item grid-item-compact">カード8</div>
         </div>
       </div>
 
       <div class="grid-demo">
-        <h3>Wide Grid (minimum 300px per item)</h3>
+        <h3>ワイドグリッド（アイテムあたり最小300px）</h3>
         <div class="grid" data-grid="300px">
           <div class="grid-item">
-            <h4>Wide Item 1</h4>
+            <h4>ワイドアイテム1</h4>
             <p>
-              These items have a larger minimum width, so fewer columns will fit
-              on smaller screens.
+              これらのアイテムはより大きな最小幅を持つため、
+              小さな画面では収まるカラム数が少なくなります。
             </p>
           </div>
           <div class="grid-item">
-            <h4>Wide Item 2</h4>
-            <p>Perfect for image galleries or product showcases.</p>
+            <h4>ワイドアイテム2</h4>
+            <p>画像ギャラリーや製品ショーケースに最適です。</p>
           </div>
           <div class="grid-item">
-            <h4>Wide Item 3</h4>
+            <h4>ワイドアイテム3</h4>
             <p>
-              The grid maintains perfect spacing regardless of content length.
+              グリッドはコンテンツの長さに関係なく、完璧なスペースを維持します。
             </p>
           </div>
           <div class="grid-item">
-            <h4>Wide Item 4</h4>
-            <p>Responsive design made simple with CSS Grid.</p>
+            <h4>ワイドアイテム4</h4>
+            <p>CSS Gridによるレスポンシブデザインが簡単になります。</p>
           </div>
         </div>
       </div>
@@ -392,42 +376,42 @@
     <div class="frame-section">
       <h2 class="frame-title">Frame Pattern</h2>
       <p class="frame-description">
-        Creates a fixed aspect ratio container that crops content to fit.
+        固定アスペクト比のコンテナを作成し、コンテンツをフィットするようにクロップします。
       </p>
 
       <div class="frame-demo">
-        <h3>16:9 Frame (Video/Image)</h3>
+        <h3>16:9フレーム（動画/画像）</h3>
         <div class="frame frame-16-9">
           <div class="frame-content">
-            <h4>Framed Content</h4>
+            <h4>フレーム化されたコンテンツ</h4>
             <p>
-              This content is contained within a 16:9 aspect ratio frame. The
-              frame maintains its proportions regardless of the content size or
-              viewport dimensions.
+              このコンテンツは16:9のアスペクト比フレーム内に含まれています。
+              フレームはコンテンツサイズやビューポート寸法に関係なく、
+              その比率を維持します。
             </p>
           </div>
         </div>
       </div>
 
       <div class="frame-demo">
-        <h3>Square Frame (1:1)</h3>
+        <h3>正方形フレーム（1:1）</h3>
         <div class="frame frame-square">
           <div class="frame-content">
-            <h4>Square Frame</h4>
+            <h4>正方形フレーム</h4>
             <p>
-              Perfect for profile pictures, thumbnails, or any content that
-              needs to maintain a square aspect ratio.
+              プロフィール写真、サムネイル、または正方形のアスペクト比を
+              維持する必要があるコンテンツに最適です。
             </p>
           </div>
         </div>
       </div>
 
       <div class="frame-demo">
-        <h3>Portrait Frame (3:4)</h3>
+        <h3>縦型フレーム（3:4）</h3>
         <div class="frame frame-portrait">
           <div class="frame-content">
-            <h4>Portrait Frame</h4>
-            <p>Ideal for portrait images or vertical content layouts.</p>
+            <h4>縦型フレーム</h4>
+            <p>縦の画像や縦向きのコンテンツレイアウトに理想的です。</p>
           </div>
         </div>
       </div>
@@ -436,63 +420,63 @@
     <div class="reel-section">
       <h2 class="reel-title">Reel Pattern</h2>
       <p class="reel-description">
-        Creates a horizontal scrolling container for a series of items.
+        一連のアイテムのための水平スクロールコンテナを作成します。
       </p>
 
       <div class="reel-demo">
-        <h3>Basic Reel</h3>
+        <h3>基本的なリール</h3>
         <div class="reel">
           <div class="reel-item">
-            <h4>Item 1</h4>
-            <p>First item in the horizontal reel.</p>
+            <h4>アイテム1</h4>
+            <p>水平リールの最初のアイテム。</p>
           </div>
           <div class="reel-item">
-            <h4>Item 2</h4>
+            <h4>アイテム2</h4>
             <p>
-              Second item with more content to show how items maintain their
-              width.
+              アイテムが幅を維持する方法を示すための
+              より多くのコンテンツを持つ2番目のアイテム。
             </p>
           </div>
           <div class="reel-item">
-            <h4>Item 3</h4>
-            <p>Third item in the sequence.</p>
+            <h4>アイテム3</h4>
+            <p>シーケンスの3番目のアイテム。</p>
           </div>
           <div class="reel-item">
-            <h4>Item 4</h4>
-            <p>Fourth item to demonstrate scrolling behavior.</p>
+            <h4>アイテム4</h4>
+            <p>スクロール動作を示す4番目のアイテム。</p>
           </div>
           <div class="reel-item">
-            <h4>Item 5</h4>
-            <p>Fifth item continues the pattern.</p>
+            <h4>アイテム5</h4>
+            <p>パターンを継続する5番目のアイテム。</p>
           </div>
           <div class="reel-item">
-            <h4>Item 6</h4>
-            <p>Sixth item for overflow demonstration.</p>
+            <h4>アイテム6</h4>
+            <p>オーバーフロー表示のための6番目のアイテム。</p>
           </div>
           <div class="reel-item">
-            <h4>Item 7</h4>
-            <p>Seventh item to show horizontal scroll.</p>
+            <h4>アイテム7</h4>
+            <p>水平スクロールを示すための7番目のアイテム。</p>
           </div>
           <div class="reel-item">
-            <h4>Item 8</h4>
-            <p>Final item in this horizontal reel.</p>
+            <h4>アイテム8</h4>
+            <p>この水平リールの最後のアイテム。</p>
           </div>
         </div>
       </div>
 
       <div class="reel-demo">
-        <h3>Compact Reel</h3>
+        <h3>コンパクトリール</h3>
         <div class="reel reel-compact">
-          <div class="reel-item reel-item-compact">Card 1</div>
-          <div class="reel-item reel-item-compact">Card 2</div>
-          <div class="reel-item reel-item-compact">Card 3</div>
-          <div class="reel-item reel-item-compact">Card 4</div>
-          <div class="reel-item reel-item-compact">Card 5</div>
-          <div class="reel-item reel-item-compact">Card 6</div>
-          <div class="reel-item reel-item-compact">Card 7</div>
-          <div class="reel-item reel-item-compact">Card 8</div>
-          <div class="reel-item reel-item-compact">Card 9</div>
-          <div class="reel-item reel-item-compact">Card 10</div>
+          <div class="reel-item reel-item-compact">カード1</div>
+          <div class="reel-item reel-item-compact">カード2</div>
+          <div class="reel-item reel-item-compact">カード3</div>
+          <div class="reel-item reel-item-compact">カード4</div>
+          <div class="reel-item reel-item-compact">カード5</div>
+          <div class="reel-item reel-item-compact">カード6</div>
+          <div class="reel-item reel-item-compact">カード7</div>
+          <div class="reel-item reel-item-compact">カード8</div>
+          <div class="reel-item reel-item-compact">カード9</div>
+          <div class="reel-item reel-item-compact">カード10</div>
         </div>
       </div>
     </div>
@@ -500,61 +484,60 @@
     <div class="imposter-section">
       <h2 class="imposter-title">Imposter Pattern</h2>
       <p class="imposter-description">
-        Absolutely positions an element over another element without affecting
-        the layout flow.
+        レイアウトフローに影響を与えることなく、要素を別の要素の上に絶対配置します。
       </p>
 
       <div class="imposter-demo">
-        <h3>Basic Imposter (Overlay)</h3>
+        <h3>基本的なインポスター（オーバーレイ）</h3>
         <div class="imposter-container">
           <div class="imposter-base">
-            <h4>Base Content</h4>
+            <h4>ベースコンテンツ</h4>
             <p>
-              This is the base content that maintains the document flow. The
-              imposter element will be positioned over this content without
-              affecting its layout.
+              これはドキュメントフローを維持するベースコンテンツです。
+              インポスター要素は、レイアウトに影響を与えることなく、
+              このコンテンツの上に配置されます。
             </p>
             <p>
-              Additional content to show how the base element maintains its
-              natural dimensions and flow.
+              ベース要素がその自然な寸法とフローを維持する方法を示すための
+              追加コンテンツ。
             </p>
           </div>
           <div class="imposter imposter-overlay">
-            <span>Overlay Content</span>
+            <span>オーバーレイコンテンツ</span>
           </div>
         </div>
       </div>
 
       <div class="imposter-demo">
-        <h3>Corner Badge Imposter</h3>
+        <h3>コーナーバッジインポスター</h3>
         <div class="imposter-container">
           <div class="imposter-base">
-            <h4>Product Card</h4>
+            <h4>製品カード</h4>
             <p>
-              This represents a product card or similar component where you
-              might want to add a badge or notification.
+              これはバッジや通知を追加したい製品カードや
+              類似のコンポーネントを表しています。
             </p>
           </div>
-          <div class="imposter imposter-badge">NEW</div>
+          <div class="imposter imposter-badge">新着</div>
         </div>
       </div>
 
       <div class="imposter-demo">
-        <h3>Center Imposter</h3>
+        <h3>センターインポスター</h3>
         <div class="imposter-container">
           <div class="imposter-base">
-            <h4>Content Container</h4>
+            <h4>コンテンツコンテナ</h4>
             <p>
-              The base container maintains its size and position while the
-              imposter element is centered over it.
+              ベースコンテナは、インポスター要素がその上に中央揃えされている間も、
+              サイズと位置を維持します。
             </p>
             <p>
-              This is useful for loading states, modals, or any centered overlay
-              content.
+              これはローディング状態、モーダル、または任意の中央揃えされた
+              オーバーレイコンテンツに有用です。
             </p>
           </div>
           <div class="imposter imposter-center">
-            <span>Centered Content</span>
+            <span>中央揃えコンテンツ</span>
           </div>
         </div>
       </div>
@@ -563,48 +546,47 @@
     <div class="container-section">
       <h2 class="container-title">Container Pattern</h2>
       <p class="container-description">
-        Controls the maximum width of content and centers it horizontally.
+        コンテンツの最大幅を制御し、水平方向に中央揃えします。
       </p>
 
       <div class="container-demo">
-        <h3>Basic Container</h3>
+        <h3>基本的なコンテナ</h3>
         <div class="container">
           <p>
-            This content is contained within a maximum width and centered
-            horizontally. The container pattern is essential for creating
-            readable content that doesn't span the full width on large screens.
+            このコンテンツは最大幅内に含まれ、水平方向に中央揃えされています。
+            コンテナパターンは、大きな画面で全幅に広がらない読みやすいコンテンツを
+            作成するために不可欠です。
           </p>
           <p>
-            As you resize the browser window, notice how the content maintains a
-            comfortable reading width and stays centered.
+            ブラウザウィンドウのサイズを変更すると、コンテンツが快適な読み幅を維持し、
+            中央に配置されることに注目してください。
           </p>
         </div>
       </div>
 
       <div class="container-demo">
-        <h3>Nested Containers</h3>
+        <h3>ネストしたコンテナ</h3>
         <div class="container">
-          <h4>Outer Container</h4>
+          <h4>外側のコンテナ</h4>
           <p>
-            This is content in the outer container with a standard max-width.
+            これは標準的な最大幅を持つ外側のコンテナのコンテンツです。
           </p>
           <div class="container-narrow">
-            <h5>Inner Narrow Container</h5>
+            <h5>内側の狭いコンテナ</h5>
             <p>
-              This inner container has a narrower max-width, useful for focused
-              content like quotes or call-to-action sections.
+              この内側のコンテナはより狭い最大幅を持ち、引用文や
+              コールトゥアクションセクションなどの集中したコンテンツに有用です。
             </p>
           </div>
         </div>
       </div>
 
       <div class="container-demo">
-        <h3>Container with Padding</h3>
+        <h3>パディング付きコンテナ</h3>
         <div class="container-padded">
           <p>
-            This container includes padding to ensure content doesn't touch the
-            edges on smaller screens while maintaining the centered, max-width
-            behavior.
+            このコンテナには、中央揃えと最大幅の動作を維持しながら、
+            小さな画面でコンテンツが端に触れないようにするためのパディングが含まれています。
           </p>
         </div>
       </div>
