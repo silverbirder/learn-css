@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: calc(var(--spacing) * 4);
+  gap: calc(var(--spacing) * 10);
 
   .hero-header {
     display: flex;
@@ -24,15 +24,16 @@
   }
 
   .title {
-    width: 500px;
-    height: 60px;
+    font-size: 3rem;
+    font-weight: 700;
     border: 1px solid #000;
+    padding: calc(var(--spacing) * 1);
   }
 
   .sub-title {
-    width: 80%;
-    height: 40px;
+    font-size: 1rem;
     border: 1px solid #000;
+    padding: calc(var(--spacing) * 1);
   }
 
   .button-group {
@@ -40,9 +41,9 @@
     gap: calc(var(--spacing) * 1);
 
     .button {
-      width: 100px;
-      height: 40px;
+      font-size: 1rem;
       border: 1px solid #000;
+      padding: calc(var(--spacing) * 1);
     }
   }
 }
