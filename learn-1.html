@@ -12,11 +12,602 @@
         <h1 class="title">Learn CSS</h1>
         <p class="sub-title">A guide to CSS layout techniques</p>
       </hgroup>
-      <div class="button-group">
-        <button class="button">Get Started</button>
-        <button class="button">Learn More</button>
-      </div>
       <div>↓</div>
+    </div>
+
+    <div class="stack-section">
+      <h2 class="stack-title">Stack Pattern</h2>
+      <p class="stack-description">
+        Creates consistent vertical spacing between stacked elements.
+      </p>
+
+      <div class="stack">
+        <h3>Article Title</h3>
+        <p>
+          This is the first paragraph of the article. The Stack pattern ensures
+          consistent spacing between all elements.
+        </p>
+        <p>
+          This is the second paragraph. Notice how the spacing is uniform
+          between all elements in the stack.
+        </p>
+        <blockquote>
+          This is a blockquote that is also part of the stack with consistent
+          spacing.
+        </blockquote>
+        <p>
+          And here's another paragraph to demonstrate the consistent vertical
+          rhythm.
+        </p>
+        <button class="stack-button">Call to Action</button>
+      </div>
+    </div>
+
+    <div class="box-section">
+      <h2 class="box-title">Box Pattern</h2>
+      <p class="box-description">
+        Applies consistent padding around content with optional borders.
+      </p>
+
+      <div class="box-demo">
+        <h3>Basic Box</h3>
+        <div class="box">
+          <h4>Box Content</h4>
+          <p>This content has consistent padding applied by the Box pattern.</p>
+        </div>
+      </div>
+
+      <div class="box-demo">
+        <h3>Box with Border</h3>
+        <div class="box box-bordered">
+          <h4>Bordered Box</h4>
+          <p>
+            This box includes a border in addition to the consistent padding.
+          </p>
+        </div>
+      </div>
+
+      <div class="box-demo">
+        <h3>Nested Boxes</h3>
+        <div class="box box-bordered">
+          <h4>Outer Box</h4>
+          <div class="box">
+            <h5>Inner Box</h5>
+            <p>Boxes can be nested while maintaining consistent spacing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-section">
+      <h2 class="center-title">Center Pattern</h2>
+      <p class="center-description">
+        Centers content horizontally with a maximum width constraint.
+      </p>
+
+      <div class="center-demo">
+        <h3>Basic Center</h3>
+        <div class="center">
+          <p>
+            This content is centered horizontally and has a maximum width
+            constraint. When the viewport is wider than the max-width, the
+            content stays centered.
+          </p>
+        </div>
+      </div>
+
+      <div class="center-demo">
+        <h3>Center with Text Alignment</h3>
+        <div class="center center-text">
+          <h4>Centered Title</h4>
+          <p>
+            This content is both horizontally centered as a block and has
+            center-aligned text.
+          </p>
+        </div>
+      </div>
+
+      <div class="center-demo">
+        <h3>Intrinsic Center</h3>
+        <div class="center center-intrinsic">
+          <button>Centered Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cluster-section">
+      <h2 class="cluster-title">Cluster Pattern</h2>
+      <p class="cluster-description">
+        Items are clustered together with consistent spacing, wrapping naturally
+        when needed.
+      </p>
+      <div class="cluster">
+        <div class="cluster-item">Design</div>
+        <div class="cluster-item">Development</div>
+        <div class="cluster-item">JavaScript</div>
+        <div class="cluster-item">CSS</div>
+        <div class="cluster-item">HTML</div>
+        <div class="cluster-item">React</div>
+        <div class="cluster-item">Vue</div>
+        <div class="cluster-item">Angular</div>
+        <div class="cluster-item">Node.js</div>
+        <div class="cluster-item">Python</div>
+        <div class="cluster-item">TypeScript</div>
+        <div class="cluster-item">Web APIs</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">Sidebar Pattern</h2>
+      <p class="sidebar-description">
+        A flexible layout with a sidebar that adapts to content width and
+        viewport size.
+      </p>
+
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <h3>Main Content</h3>
+          <p>
+            This is the main content area that takes up the remaining space. The
+            sidebar will maintain its minimum width, and this content area will
+            grow and shrink as needed.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="sidebar-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="switcher-section">
+      <h2 class="switcher-title">Switcher Pattern</h2>
+      <p class="switcher-description">
+        Automatically switches between horizontal and vertical layouts based on
+        available space and number of items.
+      </p>
+
+      <div class="switcher-demo">
+        <h3>3-Column Layout (switches to vertical on narrow screens)</h3>
+        <div class="switcher" data-switcher="3">
+          <div class="switcher-item">
+            <h4>Feature 1</h4>
+            <p>
+              This is the first feature description. It automatically adapts to
+              the available space.
+            </p>
+          </div>
+          <div class="switcher-item">
+            <h4>Feature 2</h4>
+            <p>
+              This is the second feature description. Notice how they arrange
+              themselves.
+            </p>
+          </div>
+          <div class="switcher-item">
+            <h4>Feature 3</h4>
+            <p>
+              This is the third feature description. The layout responds to
+              screen size.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="switcher-demo">
+        <h3>2-Column Layout</h3>
+        <div class="switcher" data-switcher="2">
+          <div class="switcher-item">
+            <h4>Left Content</h4>
+            <p>
+              This content takes up half the available space when there's enough
+              room, otherwise it stacks vertically.
+            </p>
+          </div>
+          <div class="switcher-item">
+            <h4>Right Content</h4>
+            <p>
+              This content also takes up half the space in horizontal mode,
+              ensuring equal distribution.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="switcher-demo">
+        <h3>4-Item Layout</h3>
+        <div class="switcher" data-switcher="4">
+          <div class="switcher-item">Card 1</div>
+          <div class="switcher-item">Card 2</div>
+          <div class="switcher-item">Card 3</div>
+          <div class="switcher-item">Card 4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-section">
+      <h2 class="cover-title">Cover Pattern</h2>
+      <p class="cover-description">
+        Centers content vertically within a container, with optional header and
+        footer that stick to the edges.
+      </p>
+
+      <div class="cover-demo">
+        <h3>Basic Cover Layout</h3>
+        <div class="cover cover-basic">
+          <header class="cover-header">Header Content</header>
+          <main class="cover-main">
+            <h4>Centered Main Content</h4>
+            <p>
+              This content is perfectly centered in the available space. The
+              header stays at the top and footer at the bottom.
+            </p>
+          </main>
+          <footer class="cover-footer">Footer Content</footer>
+        </div>
+      </div>
+
+      <div class="cover-demo">
+        <h3>Hero Section Cover</h3>
+        <div class="cover cover-hero">
+          <div class="cover-main">
+            <h4>Welcome to Our Site</h4>
+            <p>
+              This hero section uses the Cover pattern to center content
+              perfectly within the viewport height.
+            </p>
+            <button class="cover-button">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-demo">
+        <h3>Card with Cover Layout</h3>
+        <div class="cover cover-card">
+          <div class="cover-header">Card Header</div>
+          <div class="cover-main">
+            <h4>Card Title</h4>
+            <p>
+              The main content of this card is centered, with the header and
+              footer positioned at the edges.
+            </p>
+          </div>
+          <div class="cover-footer">Card Footer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-section">
+      <h2 class="grid-title">Grid Pattern</h2>
+      <p class="grid-description">
+        Creates responsive grids that automatically adjust the number of columns
+        based on available space and item minimum width.
+      </p>
+
+      <div class="grid-demo">
+        <h3>Auto Grid (minimum 250px per item)</h3>
+        <div class="grid" data-grid="250px">
+          <div class="grid-item">
+            <h4>Grid Item 1</h4>
+            <p>
+              This item has a minimum width of 250px and will automatically
+              create new columns as space allows.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h4>Grid Item 2</h4>
+            <p>
+              Grid items wrap to new rows when there isn't enough horizontal
+              space.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h4>Grid Item 3</h4>
+            <p>
+              The grid automatically determines how many columns fit based on
+              the minimum width.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h4>Grid Item 4</h4>
+            <p>This creates a truly responsive grid without media queries.</p>
+          </div>
+          <div class="grid-item">
+            <h4>Grid Item 5</h4>
+            <p>Additional items continue the pattern seamlessly.</p>
+          </div>
+          <div class="grid-item">
+            <h4>Grid Item 6</h4>
+            <p>The grid adapts to any number of items automatically.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-demo">
+        <h3>Compact Grid (minimum 200px per item)</h3>
+        <div class="grid" data-grid="200px">
+          <div class="grid-item grid-item-compact">Card 1</div>
+          <div class="grid-item grid-item-compact">Card 2</div>
+          <div class="grid-item grid-item-compact">Card 3</div>
+          <div class="grid-item grid-item-compact">Card 4</div>
+          <div class="grid-item grid-item-compact">Card 5</div>
+          <div class="grid-item grid-item-compact">Card 6</div>
+          <div class="grid-item grid-item-compact">Card 7</div>
+          <div class="grid-item grid-item-compact">Card 8</div>
+        </div>
+      </div>
+
+      <div class="grid-demo">
+        <h3>Wide Grid (minimum 300px per item)</h3>
+        <div class="grid" data-grid="300px">
+          <div class="grid-item">
+            <h4>Wide Item 1</h4>
+            <p>
+              These items have a larger minimum width, so fewer columns will fit
+              on smaller screens.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h4>Wide Item 2</h4>
+            <p>Perfect for image galleries or product showcases.</p>
+          </div>
+          <div class="grid-item">
+            <h4>Wide Item 3</h4>
+            <p>
+              The grid maintains perfect spacing regardless of content length.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h4>Wide Item 4</h4>
+            <p>Responsive design made simple with CSS Grid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="frame-section">
+      <h2 class="frame-title">Frame Pattern</h2>
+      <p class="frame-description">
+        Creates a fixed aspect ratio container that crops content to fit.
+      </p>
+
+      <div class="frame-demo">
+        <h3>16:9 Frame (Video/Image)</h3>
+        <div class="frame frame-16-9">
+          <div class="frame-content">
+            <h4>Framed Content</h4>
+            <p>
+              This content is contained within a 16:9 aspect ratio frame. The
+              frame maintains its proportions regardless of the content size or
+              viewport dimensions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame-demo">
+        <h3>Square Frame (1:1)</h3>
+        <div class="frame frame-square">
+          <div class="frame-content">
+            <h4>Square Frame</h4>
+            <p>
+              Perfect for profile pictures, thumbnails, or any content that
+              needs to maintain a square aspect ratio.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame-demo">
+        <h3>Portrait Frame (3:4)</h3>
+        <div class="frame frame-portrait">
+          <div class="frame-content">
+            <h4>Portrait Frame</h4>
+            <p>Ideal for portrait images or vertical content layouts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel-section">
+      <h2 class="reel-title">Reel Pattern</h2>
+      <p class="reel-description">
+        Creates a horizontal scrolling container for a series of items.
+      </p>
+
+      <div class="reel-demo">
+        <h3>Basic Reel</h3>
+        <div class="reel">
+          <div class="reel-item">
+            <h4>Item 1</h4>
+            <p>First item in the horizontal reel.</p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 2</h4>
+            <p>
+              Second item with more content to show how items maintain their
+              width.
+            </p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 3</h4>
+            <p>Third item in the sequence.</p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 4</h4>
+            <p>Fourth item to demonstrate scrolling behavior.</p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 5</h4>
+            <p>Fifth item continues the pattern.</p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 6</h4>
+            <p>Sixth item for overflow demonstration.</p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 7</h4>
+            <p>Seventh item to show horizontal scroll.</p>
+          </div>
+          <div class="reel-item">
+            <h4>Item 8</h4>
+            <p>Final item in this horizontal reel.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-demo">
+        <h3>Compact Reel</h3>
+        <div class="reel reel-compact">
+          <div class="reel-item reel-item-compact">Card 1</div>
+          <div class="reel-item reel-item-compact">Card 2</div>
+          <div class="reel-item reel-item-compact">Card 3</div>
+          <div class="reel-item reel-item-compact">Card 4</div>
+          <div class="reel-item reel-item-compact">Card 5</div>
+          <div class="reel-item reel-item-compact">Card 6</div>
+          <div class="reel-item reel-item-compact">Card 7</div>
+          <div class="reel-item reel-item-compact">Card 8</div>
+          <div class="reel-item reel-item-compact">Card 9</div>
+          <div class="reel-item reel-item-compact">Card 10</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="imposter-section">
+      <h2 class="imposter-title">Imposter Pattern</h2>
+      <p class="imposter-description">
+        Absolutely positions an element over another element without affecting
+        the layout flow.
+      </p>
+
+      <div class="imposter-demo">
+        <h3>Basic Imposter (Overlay)</h3>
+        <div class="imposter-container">
+          <div class="imposter-base">
+            <h4>Base Content</h4>
+            <p>
+              This is the base content that maintains the document flow. The
+              imposter element will be positioned over this content without
+              affecting its layout.
+            </p>
+            <p>
+              Additional content to show how the base element maintains its
+              natural dimensions and flow.
+            </p>
+          </div>
+          <div class="imposter imposter-overlay">
+            <span>Overlay Content</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="imposter-demo">
+        <h3>Corner Badge Imposter</h3>
+        <div class="imposter-container">
+          <div class="imposter-base">
+            <h4>Product Card</h4>
+            <p>
+              This represents a product card or similar component where you
+              might want to add a badge or notification.
+            </p>
+          </div>
+          <div class="imposter imposter-badge">NEW</div>
+        </div>
+      </div>
+
+      <div class="imposter-demo">
+        <h3>Center Imposter</h3>
+        <div class="imposter-container">
+          <div class="imposter-base">
+            <h4>Content Container</h4>
+            <p>
+              The base container maintains its size and position while the
+              imposter element is centered over it.
+            </p>
+            <p>
+              This is useful for loading states, modals, or any centered overlay
+              content.
+            </p>
+          </div>
+          <div class="imposter imposter-center">
+            <span>Centered Content</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-section">
+      <h2 class="container-title">Container Pattern</h2>
+      <p class="container-description">
+        Controls the maximum width of content and centers it horizontally.
+      </p>
+
+      <div class="container-demo">
+        <h3>Basic Container</h3>
+        <div class="container">
+          <p>
+            This content is contained within a maximum width and centered
+            horizontally. The container pattern is essential for creating
+            readable content that doesn't span the full width on large screens.
+          </p>
+          <p>
+            As you resize the browser window, notice how the content maintains a
+            comfortable reading width and stays centered.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-demo">
+        <h3>Nested Containers</h3>
+        <div class="container">
+          <h4>Outer Container</h4>
+          <p>
+            This is content in the outer container with a standard max-width.
+          </p>
+          <div class="container-narrow">
+            <h5>Inner Narrow Container</h5>
+            <p>
+              This inner container has a narrower max-width, useful for focused
+              content like quotes or call-to-action sections.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-demo">
+        <h3>Container with Padding</h3>
+        <div class="container-padded">
+          <p>
+            This container includes padding to ensure content doesn't touch the
+            edges on smaller screens while maintaining the centered, max-width
+            behavior.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
