@@ -39,6 +39,10 @@
   box-shadow: var(--shadow-light);
 }
 
+.sticky-header .container {
+  position: relative;
+}
+
 .sticky-header .cluster {
   justify-content: space-between;
   align-items: center;
@@ -68,14 +72,52 @@
 }
 
 /* Mobile Menu */
+.mobile-menu-checkbox {
+  display: none;
+}
+
 .mobile-menu-toggle {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
-  color: var(--color-black);
   padding: calc(var(--spacing) * 2);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 4px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-black);
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* アクティブ状態：×に変形 */
+.mobile-menu-checkbox:checked + .mobile-menu-toggle .hamburger-line:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 6px;
+}
+
+.mobile-menu-checkbox:checked + .mobile-menu-toggle .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-checkbox:checked + .mobile-menu-toggle .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -6px;
 }
 
 .mobile-menu {
@@ -90,7 +132,7 @@
   padding: calc(var(--spacing) * 4);
 }
 
-.mobile-menu.active {
+.mobile-menu-checkbox:checked ~ .mobile-menu {
   display: block;
 }
 
@@ -740,15 +782,15 @@
   }
   
   .mobile-menu-toggle {
-    display: block;
+    display: flex;
   }
   
-  .sticky-header {
+  .sticky-header .container {
     position: relative;
   }
   
   .cluster {
-    justify-content: center;
+    justify-content: flex-start;
   }
   
   .contact-form {
