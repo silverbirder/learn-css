@@ -68,7 +68,7 @@
   align-items: center;
 }
 
-@media (min-width: 42rem) {
+@media (min-width: 48rem) {
   .header-nav {
     display: flex;
   }
@@ -97,7 +97,7 @@
   gap: var(--spacing-xs);
 }
 
-@media (min-width: 42rem) {
+@media (min-width: 48rem) {
   .mobile-menu-toggle {
     display: none;
   }
