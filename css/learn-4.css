@@ -35,6 +35,7 @@
   --z-index-nav-header: calc(var(--z-index-header) + 1);
 }
 
+/* Header */
 .fixed-header {
   position: fixed;
   top: 0;
@@ -158,6 +159,7 @@
   font-weight: var(--font-weight-normal);
 }
 
+/* News Banner */
 .news-banner {
   position: relative;
   background-color: var(--color-black);
@@ -167,6 +169,7 @@
   font-size: var(--font-size-sm);
 }
 
+/* Hero Section */
 .hero-cover {
   display: grid;
   place-items: center;
@@ -227,9 +230,4 @@
 .btn-secondary {
   border: 1px solid var(--color-black);
   color: var(--color-gray-dark);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid var(--color-black);
 }
