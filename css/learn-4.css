@@ -16,6 +16,18 @@
   --breakpoint-tablet: 48rem;
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
+
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+
+  --font-size-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
+  --font-size-2l: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
+  --font-size-3l: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+  --font-size-4l: clamp(3.81rem, 5.18vi + 2.52rem, 6.66rem);
 }
 
 .fixed-banner {
@@ -27,7 +39,7 @@
   color: var(--color-white);
   padding: var(--spacing-sm);
   text-align: center;
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
 }
 
 .hero-cover {
@@ -43,21 +55,25 @@
   gap: var(--spacing-lg);
   max-width: var(--breakpoint-desktop);
   width: 100%;
+  padding: 0 var(--spacing-base);
 }
 
 .hero-title {
-  font-size: 10rem;
-  font-weight: 700;
+  font-size: var(--font-size-4l);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
 }
 
 .hero-subtitle {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  text-align: center;
+  word-break: keep-all;
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
 }
 
 .cluster {
@@ -73,8 +89,8 @@
   padding: var(--spacing-base) var(--spacing-md);
   border: 1px solid var(--color-black);
   color: var(--color-black);
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
 
