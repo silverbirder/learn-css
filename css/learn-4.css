@@ -378,7 +378,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
