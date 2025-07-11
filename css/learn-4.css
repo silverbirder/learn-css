@@ -346,7 +346,8 @@
 
   & > * {
     --_column: 1.5;
-    flex: 0 0 calc((100% - (var(--_gap) * (var(--_column) - 1))) / var(--_column));
+    flex: 0 0
+      calc((100% - (var(--_gap) * (var(--_column) - 1))) / var(--_column));
     @media (min-width: 40rem) {
       --_column: 2.5;
     }
