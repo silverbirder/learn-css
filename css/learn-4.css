@@ -341,10 +341,18 @@
   height: auto;
   overflow-x: auto;
   overflow-y: hidden;
-  gap: var(--spacing-sm);
+  --_gap: var(--spacing-sm);
+  gap: var(--_gap);
 
   & > * {
-    flex: 0 0 20rem;
+    --_column: 1.5;
+    flex: 0 0 calc((100% - (var(--_gap) * (var(--_column) - 1))) / var(--_column));
+    @media (min-width: 40rem) {
+      --_column: 2.5;
+    }
+    @media (min-width: 48rem) {
+      --_column: 3.5;
+    }
   }
 }
 
