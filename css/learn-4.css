@@ -33,6 +33,15 @@
 
   --z-index-header: 100;
   --z-index-nav-header: calc(var(--z-index-header) + 1);
+
+  --nav-header-height: calc(var(--spacing-base) * 4);
+  --news-banner-height: calc(var(--spacing-sm) * 4);
+  --header-height: calc(var(--nav-header-height) + var(--news-banner-height));
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -51,6 +60,7 @@
   border-bottom: 1px solid var(--color-border);
   padding: var(--spacing-base);
   z-index: var(--z-index-nav-header);
+  height: var(--nav-header-height);
 }
 
 .nav-header .cluster {
@@ -163,6 +173,7 @@
   padding: var(--spacing-sm);
   text-align: center;
   font-size: var(--font-size-sm);
+  height: var(--news-banner-height);
 }
 
 /* Hero Section */
