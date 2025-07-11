@@ -11,6 +11,8 @@
 
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-border: #e0e0e0;
+  --color-gray-dark: #666666;
 
   --breakpoint-mobile: 40rem;
   --breakpoint-tablet: 48rem;
@@ -28,8 +30,6 @@
   --font-size-2l: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
   --font-size-3l: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
   --font-size-4l: clamp(3.81rem, 5.18vi + 2.52rem, 6.66rem);
-
-  --color-border: #e0e0e0;
 
   --z-index-header: 100;
   --z-index-nav-header: calc(var(--z-index-header) + 1);
@@ -332,6 +332,44 @@
 
 .step-item-description {
   grid-area: description;
+  font-size: var(--font-size-sm);
+}
+
+/* Review Section */
+.reel {
+  display: flex;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: var(--spacing-sm);
+
+  & > * {
+    flex: 0 0 20rem;
+  }
+}
+
+.review-card {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  padding: var(--spacing-base);
+}
+
+.quote {
+  font-style: italic;
+  color: var(--color-black);
+  font-size: var(--font-size-sm);
+}
+
+.reviewer {
+  color: var(--color-gray-dark);
+  font-size: var(--font-size-sm);
+}
+
+.rating {
+  color: var(--color-black);
   font-size: var(--font-size-sm);
 }
 
