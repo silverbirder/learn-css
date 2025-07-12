@@ -31,6 +31,7 @@
   --font-size-3l: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
   --font-size-4l: clamp(3.81rem, 5.18vi + 2.52rem, 6.66rem);
 
+  --z-index-title: 20;
   --z-index-header: 100;
   --z-index-nav-header: calc(var(--z-index-header) + 1);
 
@@ -629,3 +630,16 @@ textarea {
 .btn-outline {
   border: 1px solid var(--color-black);
 }
+
+/* Sticky Section Titles */
+.sticky-section-title {
+  position: sticky;
+  top: var(--header-height);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: var(--spacing-base);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-md);
+  z-index: var(--z-index-title);
+}
+
