@@ -214,13 +214,14 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
 }
 
 /* Feature Section */
 .section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-base);
+  gap: var(--spacing-md);
 }
 
 .section-title {
@@ -394,7 +395,7 @@ html {
 }
 
 /* Pricing Section */
-.switcher {
+.price-items {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-md);
@@ -476,6 +477,61 @@ html {
   color: var(--color-gray-dark);
   border-bottom: 1px solid var(--color-border);
   padding: var(--spacing-xs) 0;
+}
+
+/* Footer Section */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-base);
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: var(--spacing-base) 0;
+}
+
+.footer-header {
+  text-align: center;
+}
+
+.footer-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-description {
+  font-size: var(--font-size-sm);
+}
+
+.footer-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  max-width: var(--breakpoint-desktop);
+  padding: 0 var(--spacing-base);
+  margin: 0 auto;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer-subtitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-link {
+  font-size: var(--font-size-sm);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-base);
+  border-top: 1px solid var(--color-gray-dark);
 }
 
 /* Utility Classes */
