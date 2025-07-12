@@ -3,356 +3,321 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Layout</title>
+    <title>CSS AI - AI駆動CSSスタイリングプラットフォーム</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <!-- Floating decoration elements -->
-      <div class="decoration decoration-1"></div>
-      <div class="decoration decoration-2"></div>
-      <div class="decoration decoration-3"></div>
-
-      <!-- Animated background -->
-      <div class="bg-animation bg-animation-1"></div>
-      <div class="bg-animation bg-animation-2"></div>
-
-      <!-- Hero content -->
-      <div class="hero-content">
-        <div class="badge">Every Layout Patterns Demo</div>
-        <h1 class="hero-title">
-          Modern CSS Layout
-          <span>Patterns</span>
-        </h1>
-        <p class="hero-description">
-          Discover the power of flexible, responsive layouts using proven CSS
-          patterns that work everywhere.
-        </p>
-
-        <!-- Button group -->
-        <div class="button-group">
-          <button class="btn">
-            Get Started
-            <span class="arrow">→</span>
-          </button>
-          <button class="btn btn-secondary">
-            <span class="play-icon">▶</span>
-            Watch Demo
-          </button>
+    <header class="fixed-header">
+      <nav class="nav-header">
+        <div class="cluster">
+          <div class="header-logo">CSS AI</div>
+          <div class="header-nav">
+            <a href="#features">機能</a>
+            <a href="#demo">デモ</a>
+            <a href="#pricing">料金</a>
+            <a href="#contact">お問い合わせ</a>
+          </div>
         </div>
-      </div>
-
-      <!-- Scroll indicator -->
-      <div class="scroll-indicator">
-        <div class="scroll-indicator-inner">
-          <div class="scroll-dot"></div>
+        <input
+          type="checkbox"
+          id="mobile-menu-toggle"
+          class="mobile-menu-checkbox"
+        />
+        <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </label>
+        <div class="mobile-menu">
+          <div class="mobile-menu-items">
+            <a href="#features">機能</a>
+            <a href="#demo">デモ</a>
+            <a href="#pricing">料金</a>
+            <a href="#contact">お問い合わせ</a>
+          </div>
         </div>
+      </nav>
+      <div class="news-banner">
+        新機能リリース！GPT-4o統合によるスマートCSS提案機能を追加しました
       </div>
+    </header>
+    <section class="hero-cover">
+      <main class="hero-container">
+        <hgroup>
+          <h1 class="hero-title">CSS AI</h1>
+          <p class="hero-subtitle">
+            AI駆動CSSスタイリング<wbr />プラットフォーム
+          </p>
+        </hgroup>
+        <div>
+          <p class="hero-description">
+            次世代AIがあなたのCSSを自動最適化。
+          </p>
+          <p class="hero-description">
+            自然言語でスタイルを指定するだけで、美しいCSSコードを瞬時に生成します。
+          </p>
+        </div>
+        <div class="cluster">
+          <button class="btn btn-primary">今すぐ始める</button>
+          <button class="btn btn-outline">詳細を見る</button>
+        </div>
+      </main>
     </section>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="navbar-brand">EveryLayout</div>
-        <div class="navbar-menu">
-          <a href="#" class="navbar-link">Features</a>
-          <a href="#" class="navbar-link">Patterns</a>
-          <a href="#" class="navbar-link">Examples</a>
-          <a href="#" class="navbar-link">Docs</a>
+    <div class="container sections">
+      <section id="features" class="section">
+        <h2 class="section-title">主要機能</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">AI CSS生成</h3>
+            <p class="card-description">
+              自然言語でデザインを記述するだけで、最適化されたCSSコードを自動生成。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">スマートスタイル提案</h3>
+            <p class="card-description">
+              AIがデザインパターンを分析し、美しいスタイルを自動提案。クリエイティブな発想をサポート。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title">リアルタイム最適化</h3>
+            <p class="card-description">
+              コードを入力するとAIが即座に最適化。パフォーマンスと保守性を自動向上。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🔍</div>
+            <h3 class="card-title">インテリジェント検証</h3>
+            <p class="card-description">
+              AIがCSSの問題を自動検出し、改善提案を提供。バグの早期発見と修正。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">📱</div>
+            <h3 class="card-title">レスポンシブAI</h3>
+            <p class="card-description">デバイスに応じた最適なレスポンシブデザインをAIが自動生成。</p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🔧</div>
+            <h3 class="card-title">開発効率化</h3>
+            <p class="card-description">IDE拡張機能でコーディング中にAIアシスタントが常時サポート。</p>
+          </div>
         </div>
-        <button class="mobile-menu-btn">☰</button>
-      </div>
-    </nav>
-
-    <!-- Main content container -->
-    <div class="container">
-      <!-- Features section -->
+      </section>
       <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">Why Every Layout?</h2>
-          <p class="section-description">
-            These battle-tested patterns solve common layout challenges with
-            minimal, flexible CSS.
-          </p>
+        <h2 class="section-title">対応技術</h2>
+        <div class="cluster">
+          <span class="tech-tag">GPT-4</span>
+          <span class="tech-tag">Claude</span>
+          <span class="tech-tag">Gemini</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Vue.js</span>
+          <span class="tech-tag">Angular</span>
+          <span class="tech-tag">Svelte</span>
+          <span class="tech-tag">Sass</span>
+          <span class="tech-tag">Less</span>
+          <span class="tech-tag">PostCSS</span>
+          <span class="tech-tag">Tailwind CSS</span>
         </div>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3 class="feature-title">Performance</h3>
-            <p class="feature-description">
-              Minimal CSS for maximum impact with optimized rendering
-            </p>
+      </section>
+      <section id="demo" class="section">
+        <h2 class="section-title">デモ</h2>
+        <div class="sidebar">
+          <div class="sidebar-video">
+            <div class="demo-video">
+              <h3 class="demo-title">ライブデモ</h3>
+              <p class="demo-description">実際のCSS AIの動作をご覧ください</p>
+              <button class="btn">デモを開始</button>
+            </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">🛡️</div>
-            <h3 class="feature-title">Reliable</h3>
-            <p class="feature-description">
-              Battle-tested across all browsers and devices
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🌍</div>
-            <h3 class="feature-title">Universal</h3>
-            <p class="feature-description">
-              Works with any framework or vanilla CSS implementation
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">👥</div>
-            <h3 class="feature-title">Accessible</h3>
-            <p class="feature-description">
-              Built with accessibility and screen readers in mind
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">❤️</div>
-            <h3 class="feature-title">Maintainable</h3>
-            <p class="feature-description">
-              Clean, readable, and logical code structure
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🏆</div>
-            <h3 class="feature-title">Proven</h3>
-            <p class="feature-description">
-              Used by thousands of developers worldwide
-            </p>
+          <div class="sidebar-steps">
+            <div class="step-items">
+              <div class="step-item">
+                <strong class="step-item-title">1. 要望を自然言語で入力</strong>
+                <p class="step-item-description">
+                  「モダンなカードデザインを作って」など、自然な言葉でデザインを指示
+                </p>
+              </div>
+              <div class="step-item">
+                <strong class="step-item-title">2. AIがCSSを自動生成</strong>
+                <p class="step-item-description">高度なAIが最適化されたCSSコードを瞬時に生成</p>
+              </div>
+              <div class="step-item">
+                <strong class="step-item-title">3. プレビュー・調整・適用</strong>
+                <p class="step-item-description">リアルタイムプレビューで確認し、微調整してプロジェクトに適用</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      <!-- Position Practice Section -->
       <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">Position Practice</h2>
-          <p class="section-description">
-            Cards with positioned elements in corners and overlays
-          </p>
-        </div>
-
-        <div class="position-grid">
-          <!-- Premium Plan Card -->
-          <div class="position-card">
-            <div class="badge-corner">New</div>
-            <div class="status-indicator"></div>
-            <div class="card-header">
-              <h3 class="card-title">Premium Plan</h3>
+        <h2 class="section-title">お客様の声</h2>
+        <div class="reel">
+          <div class="review-card">
+            <div class="quote">
+              "CSS AIを使い始めてから、コーディング時間が半分になりました。"
             </div>
-            <div class="card-content">
-              <p>
-                Advanced features with priority support and unlimited access.
-              </p>
-              <div class="price">$29/month</div>
+            <div class="reviewer">
+              <strong>田中様</strong> - フロントエンドエンジニア
             </div>
+            <div class="rating">★★★★★</div>
           </div>
-
-          <!-- Business Plan Card -->
-          <div class="position-card">
-            <div class="bg-pattern"></div>
-            <button class="floating-btn">→</button>
-            <div class="card-header">
-              <h3 class="card-title">Business Plan</h3>
+          <div class="review-card">
+            <div class="quote">
+              "自然言語でデザインを指示するだけで、想像以上の美しいCSSが生成されます。"
             </div>
-            <div class="card-content">
-              <p>
-                Perfect for growing teams with advanced collaboration tools.
-              </p>
-              <div class="price">$99/month</div>
+            <div class="reviewer">
+              <strong>佐藤様</strong> - UIデザイナー
             </div>
+            <div class="rating">★★★★★</div>
           </div>
-
-          <!-- Enterprise Plan Card -->
-          <div class="position-card">
-            <button class="close-btn">×</button>
-            <div class="category-tag">Enterprise</div>
-            <div class="price-tag">Custom Pricing</div>
-            <div class="overlay">
-              <button class="btn btn-overlay">Learn More</button>
+          <div class="review-card">
+            <div class="quote">
+              "AIの提案するスタイルは常に最新のトレンドを反映していて驚きます。"
             </div>
-            <div class="card-header">
-              <h3 class="card-title">Enterprise Plan</h3>
+            <div class="reviewer">
+              <strong>鈴木様</strong> - テックリード
             </div>
-            <div class="card-content">
-              <p>
-                Tailored solutions for large organizations with dedicated
-                support.
-              </p>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="review-card">
+            <div class="quote">
+              "レスポンシブデザインの実装が劇的に簡単になり、生産性が向上しました。"
             </div>
+            <div class="reviewer">
+              <strong>山田様</strong> - プロダクトマネージャー
+            </div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="review-card">
+            <div class="quote">
+              "CSS AIの最適化機能で、サイトのパフォーマンスが大幅に改善されました。"
+            </div>
+            <div class="reviewer">
+              <strong>伊藤様</strong> - DevOpsエンジニア
+            </div>
+            <div class="rating">★★★★★</div>
           </div>
         </div>
       </section>
-
-      <!-- Background Examples Section -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">Background Image Examples</h2>
-          <p class="section-description">
-            Various background-image techniques and patterns
-          </p>
-        </div>
-
-        <div class="bg-examples-grid">
-          <div class="bg-card">
-            <div class="bg-content">
-              <h3>Pattern Background</h3>
-              <p>SVG pattern with gradient overlay</p>
+      <section id="pricing" class="section">
+        <h2 class="section-title">料金プラン</h2>
+        <div class="price-items">
+          <div class="price-item">
+            <h4 class="plan-name">スターター</h4>
+            <div class="plan-price">¥980<span>/月</span></div>
+            <div class="plan-features">
+              <div class="plan-feature">✓ 基本AI CSS生成</div>
+              <div class="plan-feature">✓ 月100回まで生成</div>
+              <div class="plan-feature">✓ メールサポート</div>
+              <div class="plan-feature">✓ 3プロジェクトまで</div>
             </div>
+            <button class="btn btn-outline">選択する</button>
           </div>
-
-          <div class="bg-card">
-            <div class="bg-content dark">
-              <h3>Dot Pattern</h3>
-              <p>Repeating SVG dot pattern background</p>
+          <div class="price-item popular">
+            <div class="popular-badge">人気</div>
+            <h4 class="plan-name">プロ</h4>
+            <div class="plan-price">¥2,980<span>/月</span></div>
+            <div class="plan-features">
+              <div class="plan-feature">✓ 高度なAI機能</div>
+              <div class="plan-feature">✓ 無制限生成</div>
+              <div class="plan-feature">✓ 24/7サポート</div>
+              <div class="plan-feature">✓ 無制限プロジェクト</div>
+              <div class="plan-feature">✓ IDE拡張機能</div>
             </div>
+            <button class="btn btn-primary">選択する</button>
           </div>
-
-          <div class="bg-card">
-            <div class="bg-content">
-              <h3>Geometric Pattern</h3>
-              <p>Diamond pattern with gradient</p>
+          <div class="price-item">
+            <h4 class="plan-name">エンタープライズ</h4>
+            <div class="plan-price">お問い合わせ</div>
+            <div class="plan-features">
+              <div class="plan-feature">✓ カスタムAIモデル</div>
+              <div class="plan-feature">✓ 専用API</div>
+              <div class="plan-feature">✓ 専任コンサルタント</div>
+              <div class="plan-feature">✓ SLA保証</div>
+              <div class="plan-feature">✓ オンプレミス対応</div>
             </div>
-          </div>
-
-          <div class="bg-card">
-            <div class="bg-content dark">
-              <h3>Multi-layer</h3>
-              <p>Multiple background layers combined</p>
-            </div>
+            <button class="btn btn-outline">相談する</button>
           </div>
         </div>
       </section>
-
-      <!-- The Grid Pattern -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">The Grid Pattern</h2>
-          <p class="section-description">
-            Flexible grid layouts with advanced interactions
-          </p>
-        </div>
-
-        <div class="auto-grid">
-          <div class="grid-item">
-            <h3>Grid Item 1</h3>
-            <p>
-              This grid automatically adjusts the number of columns based on
-              available space using CSS Grid's auto-fit functionality.
-            </p>
+      <section id="contact" class="cover contact-section">
+        <header class="cover-header">
+          <div class="container">
+            <h3 class="center-text">お問い合わせ</h3>
           </div>
-          <div class="grid-item">
-            <h3>Grid Item 2</h3>
-            <p>
-              This grid automatically adjusts the number of columns based on
-              available space using CSS Grid's auto-fit functionality.
-            </p>
+        </header>
+        <main class="cover-main">
+          <div class="container">
+            <div class="center">
+              <div class="contact-form">
+                <div class="stack">
+                  <div class="form-group">
+                    <label>お名前</label>
+                    <input type="text" placeholder="山田太郎" />
+                  </div>
+                  <div class="form-group">
+                    <label>メールアドレス</label>
+                    <input type="email" placeholder="example@email.com" />
+                  </div>
+                  <div class="form-group">
+                    <label>お問い合わせ内容</label>
+                    <textarea
+                      placeholder="ご質問やご要望をお聞かせください"
+                    ></textarea>
+                  </div>
+                  <button class="btn btn-primary">送信する</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="grid-item">
-            <h3>Grid Item 3</h3>
-            <p>
-              This grid automatically adjusts the number of columns based on
-              available space using CSS Grid's auto-fit functionality.
-            </p>
+        </main>
+        <footer class="cover-footer">
+          <div class="container center-text">
+            <p>お気軽にお問い合わせください</p>
           </div>
-          <div class="grid-item">
-            <h3>Grid Item 4</h3>
-            <p>
-              This grid automatically adjusts the number of columns based on
-              available space using CSS Grid's auto-fit functionality.
-            </p>
-          </div>
-          <div class="grid-item">
-            <h3>Grid Item 5</h3>
-            <p>
-              This grid automatically adjusts the number of columns based on
-              available space using CSS Grid's auto-fit functionality.
-            </p>
-          </div>
-          <div class="grid-item">
-            <h3>Grid Item 6</h3>
-            <p>
-              This grid automatically adjusts the number of columns based on
-              available space using CSS Grid's auto-fit functionality.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- The Cluster Pattern -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">The Cluster Pattern</h2>
-          <p class="section-description">
-            Flexible grouping with advanced hover states
-          </p>
-        </div>
-
-        <div class="tag-cluster">
-          <span class="tag">CSS</span>
-          <span class="tag">HTML</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">React</span>
-          <span class="tag">Vue</span>
-          <span class="tag">Angular</span>
-          <span class="tag">Svelte</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Tailwind</span>
-          <span class="tag">SCSS</span>
-          <span class="tag">Flexbox</span>
-          <span class="tag">Grid</span>
-          <span class="tag">Responsive</span>
-          <span class="tag">Mobile-First</span>
-          <span class="tag">Animation</span>
-          <span class="tag">Transitions</span>
-        </div>
-      </section>
-
-      <!-- Newsletter Section -->
-      <section class="newsletter">
-        <div class="newsletter-bg-1"></div>
-        <div class="newsletter-bg-2"></div>
-        <div class="newsletter-content">
-          <h2 class="newsletter-title">Stay Updated</h2>
-          <p class="newsletter-description">
-            Get the latest updates on CSS layout patterns and modern web
-            development techniques.
-          </p>
-          <div class="newsletter-form">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="newsletter-input"
-            />
-            <button class="btn">Subscribe</button>
-          </div>
-        </div>
-      </section>
+        </footer>
+    </section>
     </div>
-
-    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-pattern"></div>
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3 class="footer-title">Every Layout</h3>
-            <p class="footer-description">
-              Modern CSS layout patterns for everyone.
-            </p>
-          </div>
-          <div class="footer-social">
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">GitHub</a>
-            <a href="#" class="social-link">Discord</a>
-          </div>
+      <div class="footer-header">
+        <h4 class="footer-title">CSS AI</h4>
+        <p class="footer-description">
+          AI駆動CSSスタイリングプラットフォーム<br />次世代AIがあなたのCSSを自動最適化
+        </p>
+      </div>
+      <div class="footer-items">
+        <div class="footer-item">
+          <h5 class="footer-subtitle">機能</h5>
+          <span class="footer-link">AI CSS生成</span>
+          <span class="footer-link">スマートスタイル提案</span>
+          <span class="footer-link">リアルタイム最適化</span>
+          <span class="footer-link">インテリジェント検証</span>
         </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; 2024 Every Layout Demo. Built with modern CSS patterns and
-            advanced techniques.
-          </p>
+        <div class="footer-item">
+          <h5 class="footer-subtitle">リソース</h5>
+          <span class="footer-link">ドキュメント</span>
+          <span class="footer-link">チュートリアル</span>
+          <span class="footer-link">コミュニティ</span>
+          <span class="footer-link">サポート</span>
         </div>
+        <div class="footer-item">
+          <h5 class="footer-subtitle">会社情報</h5>
+          <span class="footer-link">会社概要</span>
+          <span class="footer-link">利用規約</span>
+          <span class="footer-link">プライバシーポリシー</span>
+          <span class="footer-link">採用情報</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CSS AI. All rights reserved.</p>
       </div>
     </footer>
   </body>
