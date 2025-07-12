@@ -393,6 +393,91 @@ html {
   font-size: var(--font-size-sm);
 }
 
+/* Pricing Section */
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+
+  & > * {
+    flex-grow: 1;
+    flex-basis: calc((40rem - 100%) * 999);
+  }
+}
+
+.price-item {
+  position: relative;
+  display: grid;
+  grid-template:
+    "name" auto
+    "." 0
+    "price" auto
+    "." var(--spacing-md)
+    "features" auto
+    "." var(--spacing-md)
+    "button" auto / auto;
+
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-base);
+
+  &.popular {
+    border-color: var(--color-black);
+  }
+
+  & > button {
+    grid-area: button;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.popular-badge {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.plan-name {
+  grid-area: name;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.plan-price {
+  grid-area: price;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+
+  & > span {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    margin-left: var(--spacing-xs);
+  }
+}
+
+.plan-features {
+  grid-area: features;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xs);
+  padding: 0 var(--spacing-sm);
+}
+
+.plan-feature {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-dark);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-xs) 0;
+}
+
 /* Utility Classes */
 .cluster {
   display: flex;
@@ -427,4 +512,8 @@ html {
 .btn-secondary {
   border: 1px solid var(--color-black);
   color: var(--color-gray-dark);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-black);
 }
