@@ -32,6 +32,7 @@
   --font-size-4l: clamp(3.81rem, 5.18vi + 2.52rem, 6.66rem);
 
   --z-index-title: 20;
+  --z-index-page-top: 50;
   --z-index-header: 100;
   --z-index-nav-header: calc(var(--z-index-header) + 1);
 
@@ -643,3 +644,29 @@ textarea {
   z-index: var(--z-index-title);
 }
 
+/* Page Top Button */
+.page-top-btn {
+  position: fixed;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-index-page-top);
+}
+
+.page-top-arrow {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.page-top-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
