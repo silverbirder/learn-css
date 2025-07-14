@@ -44,6 +44,7 @@
 html {
   scroll-padding-top: var(--header-height);
   scroll-behavior: smooth;
+  timeline-scope: --hero;
 }
 
 /* Header */
@@ -183,6 +184,9 @@ html {
   display: grid;
   place-items: center;
   min-height: 100vh;
+
+  view-timeline-name: --hero;
+  view-timeline-axis: block;
 }
 
 .hero-container {
@@ -644,7 +648,6 @@ textarea {
   z-index: var(--z-index-title);
 }
 
-/* Page Top Button */
 .page-top-btn {
   position: fixed;
   bottom: var(--spacing-md);
@@ -659,6 +662,28 @@ textarea {
   justify-content: center;
   align-items: center;
   z-index: var(--z-index-page-top);
+
+  opacity: 0;
+  pointer-events: none;
+  animation: show-btn linear both;
+  animation-timeline: --hero;
+  animation-duration: auto;
+  animation-range: exit 0% exit 30%;
+  @supports not (animation-timeline: --hero) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@keyframes show-btn {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .page-top-arrow {
