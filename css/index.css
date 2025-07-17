@@ -353,9 +353,7 @@ html {
 /* Review Section */
 .reel {
   display: flex;
-  height: auto;
   overflow-x: auto;
-  overflow-y: hidden;
   --_gap: var(--spacing-sm);
   gap: var(--_gap);
 
