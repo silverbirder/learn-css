@@ -375,7 +375,6 @@ html {
 
 .review-card {
   display: grid;
-  grid-auto-flow: row;
   row-gap: var(--spacing-sm);
   border: 1px solid var(--color-border);
   background: var(--color-white);
