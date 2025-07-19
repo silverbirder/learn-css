@@ -405,7 +405,7 @@ html {
 
   & > * {
     flex-grow: 1;
-    flex-basis: calc((40rem - 100%) * 999);
+    flex-basis: calc((45rem - 100%) * 999);
   }
 }
 
